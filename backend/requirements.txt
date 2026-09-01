@@ -1,0 +1,18 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
+python-dotenv==1.0.1
+pydantic==2.9.2
+
+# LLM providers (only the one you configure via LLM_PROVIDER strictly needs a key)
+groq==0.11.0
+google-generativeai==0.8.3
+requests==2.32.3
+
+# Search providers
+tavily-python==0.5.0
+duckduckgo-search==6.3.0
+
+# Vector store + local embeddings
+chromadb==0.5.15
+sentence-transformers==3.1.1
