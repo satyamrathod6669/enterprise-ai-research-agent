@@ -24,7 +24,7 @@ def get_collection():
         return _collection
     _client = chromadb.PersistentClient(path=config.CHROMA_PERSIST_DIR)
     embed_fn = embedding_functions.DefaultEmbeddingFunction()
-    )
+    
     _collection = _client.get_or_create_collection(
         name="findings",
         embedding_function=embed_fn,
