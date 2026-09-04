@@ -48,7 +48,7 @@ with tab_ask:
         with st.status("Running research pipeline...", expanded=True) as status:
             st.write("① Searching sources...")
             try:
-                resp = requests.post(f"{API_BASE}/questions", json={"question_text": question_text}, timeout=300)
+                resp = requests.post(f"{API_BASE}/questions", json={"question_text": question_text}, timeout=580)
                 resp.raise_for_status()
                 result = resp.json()
                 st.write("② Extracting & classifying findings...")
