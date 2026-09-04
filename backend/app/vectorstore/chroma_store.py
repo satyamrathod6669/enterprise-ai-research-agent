@@ -23,8 +23,7 @@ def get_collection():
     if _collection is not None:
         return _collection
     _client = chromadb.PersistentClient(path=config.CHROMA_PERSIST_DIR)
-    embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=config.EMBEDDING_MODEL
+    embed_fn = embedding_functions.DefaultEmbeddingFunction()
     )
     _collection = _client.get_or_create_collection(
         name="findings",
