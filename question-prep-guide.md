@@ -1,4 +1,4 @@
-# Enterprise AI Research Agent — Recruiter Explanation Guide
+# Enterprise AI Research Agent — Explanation Guide
 
 ## PART 1: The 30-second answer (memorize this)
 
